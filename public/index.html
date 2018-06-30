@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+</head>
+<body>
+
+    <div class="container my-3">
+        <div class="form-group">
+            <label for="image-des">Enter Description:</label>
+            <textarea id="image-des" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="image-upload">Upload Image:</label>
+            <div class="input-group">
+                <input type="file" id="image-upload" class="form-control">
+                <input type="button" value="Submit" class="btn btn-info" onClick="uploadImage()">
+            </div>
+        </div>
+        <!-- <button class="btn btn-primary" onClick="readData()">Read Data</button> -->
+        <div id="images-container" class="my-3">
+            <!-- <div class="image-item">
+                <img src="goals.jpg" width="100%" height="100%">
+                <p>Lorem ipsum dolor sit.</p>
+            </div> -->
+        </div>
+        <!-- <img src="" id="image-element" width="100%" height="100%"> -->
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
